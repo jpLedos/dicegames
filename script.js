@@ -10,7 +10,7 @@ const resultImg = document.getElementById("resultImg");
 const player1 = document.getElementById('player1')
 const player2 = document.getElementById('player2')
 let img;// variable image pour affichage du dé
-let target = 25// nombre de point pour gagner la partie
+let target = 100// nombre de point pour gagner la partie
 
 
 
@@ -105,7 +105,6 @@ function refresh() {
     player1.style.textDecoration = 'none';
     player1.style.backgroundColor = 'lightgray';
   }
-  
   //console.log('refresh OK")')
 }
 
