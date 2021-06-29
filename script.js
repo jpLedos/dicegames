@@ -84,7 +84,7 @@ function refresh() {
   global1.innerText = globals[0];
   global2.innerText = globals[1];
   roundHtml.innerText = round;
-  img="./images/" + result + "b.jpg";
+  img="./images/" + result + ".png";
   resultImg.setAttribute("src",img);
 
   if (currentPlayerGlobal()>= target ) {
