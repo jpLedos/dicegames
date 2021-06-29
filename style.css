@@ -66,9 +66,9 @@ div {
     padding: 5px;
   }
   .player {
-    width : 600px;
+    width : 500px;
     height : 200;
-    font-size : 2em;
+    font-size : 1.6em;
     padding : 25px;
   }
   .globals {
@@ -84,7 +84,7 @@ div {
 
 .btn {
   width: 600px;
-  height : 200px;
+  height : 150px;
   margin : 30px;
   border-radius: 10px;
   font-size: 1.6em;
