@@ -1,0 +1,10 @@
+*.pdf
+*.svg
+*.wav
+maquette/
+*.xlsx
+*.txt
+!robot.txt
+bootstrap.min.css
+package-lock.json
+/node_modules

@@ -3,20 +3,46 @@
 <head>
   <meta charset="utf-8">
   <title>le jeux de dés</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png" />
+
+  <!--  balise meta OG pour partage du site sur reseau sociaux git  -->
+  <meta property="og:title" content="Un jeu de dés" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jpledos.github.io/msp/" />
+  <meta property="og:image" content="https://jpledos.github.io/msp/images/bandeau_og.png" />
+  <meta property="og:description" content="Amuser vous a jouer au dés" />
+
 </head>
 <body>
-<button id="newParty">Nouvelle partie</button>
-<div>Total player one : <span id="global1"></span></div>
-<div>le resultat du dés : <span id="roll"></span><br />
-Total du pôt : <span id="round"></span></div>
-<div>Total player two : <span id="global2"></span></div>
-<button id="rollButton">Je lance le dé</button>
-<button id="holdButton">Je prends les points</button>
 
+<div id="container">
+  <div button id="newParty"  class="btn btn-success">NOUVELLE PARTIE</div>
+  <div class= "row justify-content-around">
+    <div id="player1" class= "col-lg-4 col-12 player">
+        <div>Joueur un</div>
+        <div id="global1" class="globals"></div>
+      </div>
+
+    <div class="col-lg-4 col-12">
+      <img id="resultImg" src="./images/6.png" alt="dés"><span id="roll"></span><br />
+      <div id="round-container">Total du pôt : <span id="round"></span></div>
+      <button id="rollButton" class="btn btn-primary">Je lance le dé</button><br />
+      <button id="holdButton" class="btn btn-warning">Je prends les points</button>
+    </div>
+
+    <div id="player2" class= "player col-lg-4 col-12">
+      <div>Joueur deux</div>
+      <div id="global2" class="globals"></div>
+    </div>
+  </div>
+</div>  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
 </body>
-
-<script src="script.js">
-
-</script>
 </html>
