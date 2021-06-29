@@ -66,27 +66,27 @@ div {
     padding: 5px;
   }
   .player {
-    width : 400px;
-    height : 130px;
-    font-size : 1.5rem;
+    width : 600px;
+    height : 200;
+    font-size : 2em;
     padding : 25px;
   }
   .globals {
     color : red;
-    font-size: 2rem;
+    font-size: 1.8em;
   }
   #round-container {
-    width : 400px;
+    width : 600px;
     margin: auto;
     margin-top: 25px;
   }
 
 .btn {
-  width: 400px;
-  height : 100px;
+  width: 600px;
+  height : 200px;
   margin : 30px;
   border-radius: 10px;
-  font-size: 1.2em;
+  font-size: 1.6em;
 }
 #resultImg {
   width: 250px;
