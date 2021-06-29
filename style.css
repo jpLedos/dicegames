@@ -73,12 +73,13 @@ div {
   }
   .globals {
     color : red;
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
   #round-container {
     width : 600px;
     margin: auto;
     margin-top: 25px;
+    font-size: 1.5em;
   }
 
 .btn {
