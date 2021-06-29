@@ -11,6 +11,13 @@ max-width: 1000px;
   padding-bottom: 20px;
 }
 
+.btn {
+  width: 280px;
+  height : 100px;
+  margin : 10px;
+  border-radius: 10px;
+  font-size: 1em;
+}
 
 #container {
   background-image: url("images/piste.jpg");
@@ -20,6 +27,7 @@ max-width: 1000px;
 #resultImg {
   opacity: 0.80;
   border-radius: 40px;
+  width: 300px;
 }
 
 #round-container {
@@ -27,7 +35,6 @@ max-width: 1000px;
   color:red;
   border-radius: 50px;
   padding-top: 25px;
-  margin-top: 25px;;
   max-width: 100 px;
 }
 
@@ -50,7 +57,7 @@ div {
 #round-container {
   border : 1 red solid;
 }
-
+/* media query pour les phone ------------ */ 
 @media screen and (max-width: 992px) {
   #resultImg {
     padding-top: 15px;;
@@ -73,5 +80,16 @@ div {
     margin: auto;
     margin-top: 25px;
   }
+
+.btn {
+  width: 400px;
+  height : 100px;
+  margin : 30px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+#resultImg {
+  width: 250px;
+}
 
 }
