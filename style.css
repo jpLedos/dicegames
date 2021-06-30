@@ -52,7 +52,9 @@ div {
   font-size: 4rem;
 }
 #round-container {
-  border : 1 red solid;
+
+  background-color: rgba(169, 169, 169, 0.5);
+  border-radius: 25px;
 }
 /* media query pour les phone ------------ */ 
 @media screen and (max-width: 992px) {
@@ -77,7 +79,9 @@ div {
     width : 600px;
     margin: auto;
     margin-top: 25px;
-    font-size: 1.5em;
+    font-size: 1.8em;
+    font-weight: bolder;
+
   }
 
 .btn {
