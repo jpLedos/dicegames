@@ -94,15 +94,15 @@ function refresh() {
   } 
 
   if (currentPlayerName() === "player1") {
-    player1.style.textDecoration = 'bold';
+    player1.style.fontWeight = 'bold';
     player1.style.backgroundColor = 'lightgreen';
-    player2.style.textDecoration = 'none';
+    player2.style.fontWeight = 'lighter';
     player2.style.backgroundColor = 'lightgray';
   }
   if (currentPlayerName() == "player2") {
-    player2.style.textDecoration = 'bold';
+    player2.style.fontWeight = 'bold';
     player2.style.backgroundColor = 'lightgreen';
-    player1.style.textDecoration = 'none';
+    player1.style.fontWeight = 'lighter';
     player1.style.backgroundColor = 'lightgray';
   }
   //console.log('refresh OK")')
