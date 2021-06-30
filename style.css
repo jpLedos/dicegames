@@ -67,6 +67,7 @@ div {
     height : 200;
     font-size : 1.6em;
     padding : 25px;
+    margin-bottom: 25px;
   }
   .globals {
     color : red;
@@ -88,6 +89,8 @@ div {
 }
 #resultImg {
   width: 250px;
+  /*box-shadow(30px 10px 4px #821a15);*/
+  box-shadow: 10px 5px 5px red; 
 }
 
 }
