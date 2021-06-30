@@ -39,7 +39,6 @@ max-width: 1000px;
   background-color:  lightgray;
   text-align: center;
   padding : 50px;
-  width: 100px;
   border-radius: 15px;
 }
 
@@ -66,7 +65,7 @@ div {
   }
   .player {
     width : 500px;
-    height : 200px;
+    height : 250px;
     font-size : 1.6em;
     padding : 25px;
     margin-bottom: 25px;
