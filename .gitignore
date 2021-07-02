@@ -8,3 +8,4 @@ maquette/
 bootstrap.min.css
 package-lock.json
 /node_modules
+/.git

@@ -1,38 +1,30 @@
 body{
-font-family:'Lato',  sans-serif;
-font-size: 2rem;;
-text-align: center;
-max-width: 1000px;
+  font-family:'Lato',  sans-serif;
+  background-repeat: no-repeat;
+  max-width: 600px;
+  background-color: #cee8eb75;
+  font-size:16px;
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  width: 80%;
+  margin:auto;
+  height: 400px;
+  }
 
-}
-
-#newParty{
-  margin : 25px;
-  padding-bottom: 20px;
-}
-
-.btn {
-  width: 280px;
-  height : 100px;
-  margin : 10px;
-  border-radius: 10px;
-  font-size: 1em;
-}
-
-#container {
-  background-image: url("images/piste.jpg");
-
-}
 
 #resultImg {
   opacity: 0.80;
   border-radius: 40px;
-  width: 300px;
 }
 
 #round-container {
-  /* background-color: #198754; */
-  color:red;
+  background-color: cyan;
+  padding: 12px;
+  text-align: center;
+}
+
+.btn , #round-container {
+  border-radius: 15px;
 }
 
 .player {
@@ -41,59 +33,27 @@ max-width: 1000px;
   padding : 50px;
   border-radius: 15px;
 }
-
-div {
-  padding:   20px;
-}
-
 .globals {
   color : red;
   font-size: 4rem;
 }
-#round-container {
 
-  background-color: rgba(169, 169, 169, 0.5);
-  border-radius: 25px;
-}
-/* media query pour les phone ------------ */ 
-@media screen and (max-width: 992px) {
-  #resultImg {
-    padding-top: 15px;;
-  }
-  div {
-    padding: 5px;
-  }
-  .player {
-    width : 500px;
-    height : 250px;
-    font-size : 1.6em;
-    padding : 25px;
-    margin-bottom: 25px;
-  }
-  .globals {
-    color : red;
-    font-size: 1.5em;
-  }
-  #round-container {
-    width : 600px;
-    margin: auto;
-    margin-top: 25px;
-    font-size: 1.8em;
-    font-weight: bolder;
 
-  }
 
-.btn {
-  width: 600px;
-  height : 150px;
-  margin : 30px;
-  border-radius: 10px;
-  font-size: 1.6em;
-}
-#resultImg {
-  width: 250px;
-  /*box-shadow(30px 10px 4px #821a15);*/
-  box-shadow: 10px 5px 5px red; 
+#player1 {
+  grid-column-start: 1;
+
+  margin: 10px;
 }
 
+#player2 {
+  grid-column-start: 3;
+  margin: 10px;
+}
+#game {
+  display : flex;
+  justify-content: space-between;
+  flex-direction: column;
+  grid-column-start: 2;
+  margin: 10px;
 }
