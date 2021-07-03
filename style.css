@@ -1,16 +1,19 @@
 body{
   font-family:'Lato',  sans-serif;
   background-repeat: no-repeat;
-  max-width: 600px;
-  background-color: #cee8eb75;
-  font-size:16px;
-  display: grid;
-  grid-template-columns: 35% 30% 35%;
-  width: 80%;
   margin:auto;
-  height: 400px;
+  font-size:50px;
   }
 
+  #container {
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    grid-template-areas:
+    "player1 game player2";
+    width: 80%;
+    margin:auto;
+    height: 400px;
+  }
 
 #resultImg {
   opacity: 0.80;
@@ -25,14 +28,10 @@ body{
 
 .btn , #round-container {
   border-radius: 15px;
+  font-size: 2rem;
 }
 
-.player {
-  background-color:  lightgray;
-  text-align: center;
-  padding : 50px;
-  border-radius: 15px;
-}
+
 .globals {
   color : red;
   font-size: 4rem;
@@ -40,29 +39,81 @@ body{
 
 
 
+.player {
+  background-color:  lightgray;
+  text-align: center;
+  padding: 5px;
+  padding-top:50px;
+  border-radius: 25px;  
+
+}
+
 #player1 {
   grid-column-start: 1;
   text-align: center;
-  padding: 5px auto;
-  padding-top:50px ;
+  grid-area : player1;
 }
 
 #player2 {
   text-align: center;
   grid-column-start: 3;
-  padding: 5px auto;
   padding-top:50px ;
+  grid-area : player2;
 }
 #game {
   display : flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
   grid-column-start: 2;
+  grid-area : game;
   margin: 10px;
 }
-
-@media screen and (max-width: 768px) {
-  body {
-    width: 100%;
+#de{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
+
+
+
+
+/*---------version mobile-----------------*/
+@media  (max-device-width: 768px)  {
+  #container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 20% 80%;
+    grid-template-areas:
+    "player1 "
+    "player2"
+    "game";
+    width: 100%;
+    height:auto;
+    margin:auto;
+  }
+
+  #resultImg {
+    width : 50%;
+    display: block;
+    margin: auto;
+  }
+ 
+
+
+  #player1 {
+    padding-top: 25px;
+    margin: 25px;
+  }
+  #player2 {
+    padding-top: 25px;
+    margin: 25px;
+  }
+  .globals {
+    color : red;
+    font-size: 4rem;
+  }
+  .btn {
+    margin-top: 10px;
+    font-size:3rem;
+  }
 }
